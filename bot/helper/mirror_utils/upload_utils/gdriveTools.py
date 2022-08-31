@@ -688,7 +688,8 @@ class GoogleDriveHelper:
                     furl = f"https://drive.google.com/drive/folders/{file.get('id')}"
                     furl = short_url(furl)
                     msg += f"⁍<a href='https://drive.google.com/drive/folders/{file.get('id')}'>{file.get('name')}" \
-                               f"</a> (shortcut)"
+                           f"</a> (shortcut)"
+
                 else:
                     furl = f"https://drive.google.com/uc?id={file.get('id')}&export=download"
                     furl = short_url(furl)
